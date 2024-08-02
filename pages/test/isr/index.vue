@@ -1,0 +1,12 @@
+<template>
+  <div>
+    <h1>ISR</h1>
+    <p>Time in Athens, Europe: {{ new Date(data.datetime).toUTCString() }}</p>
+  </div>
+</template>
+
+<script lang="ts" setup>
+const { data } = await useFetch(
+  "http://worldtimeapi.org/api/timezone/Europe/Athens"
+);
+</script>
