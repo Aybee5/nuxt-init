@@ -7,6 +7,6 @@
 
 <script lang="ts" setup>
 const { data } = await useFetch(
-  "http://worldtimeapi.org/api/timezone/Europe/Athens"
+  "https://worldtimeapi.org/api/timezone/Europe/Athens"
 );
 </script>
